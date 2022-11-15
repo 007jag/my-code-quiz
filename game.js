@@ -9,33 +9,20 @@ let score = 0;
 let questionCounter = 0;
 let availableQuesions = [];
 
-let questions = [
-    {
-        question: 'What is generally considered to be the first "pony car??',
-        choice1: 'Ford Mustang',
-        choice2: 'Mercury Cougar',
-        choice3: 'Chevrolet Camero',
-        choice4: 'Pontiac Firebird',
-        answer: 1,
-    },
-    {
-        question:
-            "What was the first Japanese car to be produced in the United States?",
-        choice1: "Toyota Camry",
-        choice2: "Nissan Maxima",
-        choice3: "Honda Accord",
-        choice4: "Mazada Miata",
-        answer: 3,
-    },
-    {
-        question: " What car sold more than one million units in 1965, setting a record that still stands today",
-        choice1: "Pontiac GTO",
-        choice2: "Buick WildCat",
-        choice3: "Ford ThunderBird",
-        choice4: "Chevrolet Implala",
-        answer: 4,
-    },
-];
+let questions = [];
+
+fetch("questions.json").then(res => {
+  return res.json();
+})
+.then(loadedQuestions => {
+  console.log(loadedQuestions);
+  questions = loadedQuestions;
+  startGame();
+})
+
+.catch( err => {
+  console.error(err);
+});
 
 //CONSTANTS
 const CORRECT_BONUS = 10;
@@ -101,4 +88,3 @@ incrementScore = num => {
   scoreText.innerText = score;
 };
 
-startGame();

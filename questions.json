@@ -1,0 +1,26 @@
+[
+  {
+    "question": "What is generally considered to be the first pony car??",
+    "choice1": "Ford Mustang",
+    "choice2": "Murcury Cougar",
+    "choice3": "Chelrolet Camero",
+    "choice4": "Pontiac Firebird",
+    "answer": 1
+  },
+  {
+    "question": "What was the first Japanese car to be produced in the United States?",
+    "choice1": "Toyota Camry",
+    "choice2": "Nissan Maxima",
+    "choice3": "Honda Accord",
+    "choice4": "Mazada Miata",
+    "answer": 3
+  },
+  {
+    "question": " What car sold more than one million units in 1965, setting a record that still stands today",
+    "choice1": "Pontiac GTO",
+    "choice2": "Buick WildCat",
+    "choice3": "Ford ThunderBird",
+    "choice4": "Chevrolet Implala",
+    "answer": 4
+  }
+]
